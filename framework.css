@@ -1,0 +1,91 @@
+/* --- / Buttons / --- */
+.class-form {
+	margin: 0;
+	padding: 0;
+
+	margin-bottom: 25px;
+}
+.class-photo {
+	min-width: 390px;
+	max-width: 100%;
+
+	display: inline-block;
+}
+.class-photo img { 
+    background-size: cover;
+    margin: 5px; 
+    max-width: 30%;
+    opacity: 0.85;
+    transition: 0.5s;
+}
+.class-photo img:hover { 
+    opacity: 1;
+}
+.class-button.white {
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.class-button.green {
+    box-shadow: inset 0 0 0 1px #adef79;
+}
+.class-button.white, 
+.class-button.green {
+	text-decoration: none;
+    font-family: Arial,sans-serif;
+    position: relative;
+    vertical-align: baseline;
+    color: #000;
+    border-radius: 3px;
+    
+    font-size: 15px;
+    line-height: 22px;
+    padding: 6px 17px;
+    height: 30px;
+}
+.class-button.white:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px #a6a6a6;
+}
+.class-button.green:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px #82d045;
+}
+.class-button.white.plus, 
+.class-button.green.plus {
+    margin: 0;
+    border: none;
+    background: 0 0;
+    -moz-appearance: none;
+    font: inherit;
+}
+.class-button.classic-green {
+	padding: 5px 50px;
+    line-height: 30px;
+    font-size: 22px;
+    font-style: normal;
+    background-color: #7fbf4d;
+    background-image: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+    background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: linear-gradient(top, #7fbf4d, #63a62f);
+    border: 1px solid #63a62f;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+    box-shadow: inset 0 1px 0 0 #96ca6d;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+
+
+    font-size: 15px;
+    line-height: 22px;
+    padding: 6px 17px;
+    height: 30px;
+}
+.class-button.classic-green:hover {
+	opacity: .85;
+}
+/* --- / ------- / --- */

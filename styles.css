@@ -1,0 +1,292 @@
+html, body {
+	padding: 0; margin: 0;
+}
+body { 
+    overflow-y: scroll; 
+}
+header {
+    height: 36px;
+    padding: 0;
+    margin: 0;
+}
+.bg {
+    margin-top: -60px;
+    background: url('images/bg.jpg');
+    background-attachment:fixed;
+    height: 100px;
+}
+.icon-arrow-right {
+	display: inline-table;
+	width: 12px;
+	height: 16px;
+	background: url('images/icons/right.png');
+}
+.label-tabName {
+	font-size: 14px;
+	height: 5px;
+	float: right; 
+	margin-top: -45px; 
+	opacity: .5;
+}
+.shaded {
+	height: 20px;
+	background: #fff; /* Для старых браузров */
+    background: linear-gradient(to top, #fff, #d3d3d3);
+}
+.wrapper {
+	min-width: 300px;
+	max-width: 960px;
+	padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 5em;
+
+}
+::selection {
+    background: #f6883e;
+    color: #fff;
+    text-shadow: none;
+}
+.footer {
+    border-top:1px solid #e3e3e3;
+    padding-top:10px;
+    margin-top:100px;
+
+    color:#ccc;
+    text-align:center;
+    font-size:10px;
+    letter-spacing:0.1em;
+}
+
+.footer a {
+	text-decoration: none;
+    color:#999;
+}
+
+.footer ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.footer li {
+    padding:0 12px;
+    display:inline;
+    border-right:1px solid #ccc;
+}
+.footer li.last {
+    border-right:none;
+}
+.footer li.cuttingEdge {
+    border-right:none;
+    color: #d00;
+    font-weight:bold;
+}
+
+/* БАР */
+header .logo {
+	margin-top: 35px;
+	margin-bottom: 25px;
+	float: left;
+	width: 164px;
+	height: 24px;
+	background: url('images/labrob_logo.png');
+}
+#labrob-bar a { text-decoration: none; color: #00e; }
+#labrob-bar a:visited { color: #551a8b; }
+#labrob-bar a:hover { color: #06e; }
+#labrob-bar a:focus { outline: thin dotted; }
+#labrob-bar a:hover, a:active { outline: 0; }
+
+#labrob-bar abbr[title] { border-bottom: 1px dotted; }
+#labrob-bar b, strong { font-weight: bold; }
+#labrob-bar blockquote { margin: 1em 40px; }
+#labrob-bar dfn { font-style: italic; }
+#labrob-bar hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+#labrob-bar ins { background: #ff9; color: #000; text-decoration: none; }
+#labrob-bar mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+#labrob-bar pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+#labrob-bar pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+#labrob-bar q { quotes: none; }
+#labrob-bar q:before, q:after { content: ""; content: none; }
+#labrob-bar small { font-size: 85%; }
+#labrob-bar sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+#labrob-bar sup { top: -0.5em; }
+#labrob-bar sub { bottom: -0.25em; }
+#labrob-bar ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+#labrob-bar dd { margin: 0 0 0 40px; }
+#labrob-bar nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+#labrob-bar img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+#labrob-bar svg:not(:root) { overflow: hidden; }
+#labrob-bar figure { margin: 0; }
+
+#labrob-bar form { margin: 0; }
+#labrob-bar fieldset { border: 0; margin: 0; padding: 0; }
+#labrob-bar label { cursor: pointer; }
+#labrob-bar legend { border: 0; *margin-left: -7px; padding: 0; }
+#labrob-bar button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+#labrob-bar button, input { line-height: normal; *overflow: visible; }
+#labrob-bar table button, table input { *overflow: auto; }
+#labrob-bar button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+#labrob-bar input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+#labrob-bar input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+#labrob-bar input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+#labrob-bar button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+#labrob-bar textarea { overflow: auto; vertical-align: top; resize: vertical; }
+#labrob-bar input:valid, textarea:valid {  }
+#labrob-bar input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+#labrob-bar table { border-collapse: collapse; border-spacing: 0; }
+#labrob-bar td { vertical-align: top; }
+
+#labrob-bar, #labrob-bar ul {
+    /* border:1px solid #b4b4b4; */
+    border-top:none;
+    background:#868686 ;
+    height:36px;
+    line-height:36px;
+    padding:0;
+    margin:0;
+    list-style:none;
+    position:absolute;
+    z-index: 100;
+	top:0;
+	right:0;
+}
+#labrob-bar {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:13px;
+    -webkit-box-shadow:  0px 3px 4px 0px rgba(0, 0, 0, 0.07);
+    box-shadow:  0px 3px 4px 0px rgba(0, 0, 0, 0.07);
+}
+#labrob-bar li {
+    padding:0;
+    margin:0;
+    float:left;
+    height:36px;
+    line-height:20px;
+    position:relative;
+    border-left:1px solid #9e9e9e;
+    border-right:1px solid #676767;
+}
+#labrob-bar li.icon {
+    padding-left:12px;
+    background-position:4px 10px;
+    background-repeat:no-repeat;
+}
+#labrob-bar .cobalt-icon {
+    background-image:url(images/cobalt_icon_s.png);
+}
+#labrob-bar .minecraft-icon {
+    background-image:url(images/minecraft_icon_s.png);
+}
+#labrob-bar .scrolls-icon {
+    background-image:url(images/scrolls_icon_s.png);
+}
+#labrob-bar li:hover {
+    background-color:#eaeaea;
+}
+li#labrob-bar-home:hover {
+    background-color:transparent;
+}
+#labrob-bar li ul {
+    left:-1px;
+    top:36px;
+    right:-1px;
+    height:auto;
+    border:1px solid #bababa;
+    border-top:none;
+    background:#eaeaea;
+    display:none;
+    position:absolute;
+}
+#labrob-bar li:hover ul {
+    display:block;
+}
+#labrob-bar li li {
+    float:none;
+    border:none;
+    border-bottom:1px solid #bababa;
+}
+#labrob-bar li li.last {
+    border-bottom:none;
+}
+#labrob-bar li a, #labrob-bar li a:visited, #labrob-bar li a:active, #labrob-bar li a:hover {
+    height:35px;
+    line-height:36px;
+    margin-top:1px;
+    padding:0 16px;
+    display:inline-block;
+    color:#fff;
+    font-weight:bold;
+}
+#labrob-bar li:hover a, #labrob-bar li:hover a:visited, #labrob-bar li:hover a:active, #labrob-bar li:hover a:hover {
+    color:#5c5c63;
+}
+#labrob-bar li:hover a:hover {
+    text-decoration:none;
+}
+#labrob-bar li li a, #labrob-bar li li a:visited, #labrob-bar li li a:active, #labrob-bar li li a:hover {
+    margin:0;
+    height:36px;
+    display:block;
+    color:#5c5c63;
+    font-weight:normal;
+}
+#labrob-bar li li a:hover {
+    color:#81818b;
+    text-decoration:underline;
+}
+#labrob-bar li.first {
+    border-left:none;
+}
+#labrob-bar li.first img {
+    width:36px;
+    height:36px;
+}
+#labrob-bar li.first a {
+    margin:0;
+    margin-top:-2px;
+    padding:0 4px;
+}
+#labrob-bar li li.first {
+    border-top:1px solid #bababa;
+}
+#labrob-bar li li.first a {
+    margin:0;
+    padding:0 16px;
+}
+li#labrob-bar-contacts {
+    border-right:none;
+}
+#labrob-bar li.last {
+    border-right:none;
+}
+#labrob-bar li ul li:hover {
+    background-color:#dadada;
+}
+#labrob-bar li b {
+    background:url(images/arrow_in_the_knee.png) no-repeat 0 0;
+    font-size:7px;
+    height:7px;
+    display:inline-block;
+    width:11px;
+    vertical-align:middle;
+    margin-left:4px;
+    margin-top:-2px;
+}
+#labrob-bar li:hover b {
+    background-position:0 -7px;
+}
+
+#labrob-bar a {
+    font-size:13px;
+    font-weight:300;
+}
+
+#labrob-bar-home {
+    background:url(images/labrob_logo_small.png) no-repeat center 0;
+    overflow:hidden;
+    text-indent:-1000px;
+    width:40px;
+}
+/* --- */
