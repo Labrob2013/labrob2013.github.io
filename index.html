@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Главная страница</title>
+    <link rel="shortcut icon" href="images/labrob_logo_icon.png" type="image/png">
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="framework.css">
 
@@ -33,6 +35,26 @@
 	<div class="wrapper">
         <p><h4>Приложения:</h4></p>
 		
+		<div class="modal" id="license">
+              <a href="#modals" class="modal-overlay" aria-label="Close"></a>
+              <div class="modal-container" role="document">
+                <div class="modal-header">
+                  <a href="#modals" class="btn btn-clear float-right" aria-label="Close"></a>
+                  <div class="modal-title h5">Лицензионное соглашение</div>
+                </div>
+                <div class="modal-body">
+                  <div class="content">
+                    <iframe style="width: 100%; border: 0px;overflow-y: scroll;" src="file:///E:/Maxim/projects/GitHub/labrob2013.github.io/legal/software_agreement_EULA.html"></iframe>
+                    или <a href="https://labrob2013.github.io/legal/software_agreement.html">https://labrob2013.github.io/legal/software_agreement.html</a>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://labrob2013.github.io/PictureMananger.zip" class="btn btn-primary">Принимаю</a>
+                  <a href="#modals" class="btn btn-link">Отмена</a>
+                </div>
+              </div>
+            </div>
+
 		<div class="card">
 		  <div class="card-image">
 		    <img src="images/products/PictureMananger.png" class="img-responsive">
@@ -45,12 +67,13 @@
 		    Основные функции редактирования изображений включают в себя изменение яркости, контрастности, обрезку, перевертывание, изменение размера.
 		  </div>
 		  <div class="card-footer">
-		    <a href="https://labrob2013.github.io/PictureMananger.zip" class="btn btn-primary">Скачать</a>
+		    <a href="#license" class="btn btn-primary">Скачать</a>
 		  </div>
 		</div>
 		
 		<footer class="footer">
         <ul>
+        	<li><a href="https://labrob2013.github.io/legal/software_agreement.html">Лицензионное соглашение</a></li>
             <li class="last">Labrob2013 ©2013-2018</li>
         </ul>
     	</footer>

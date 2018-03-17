@@ -13,6 +13,8 @@ header {
     margin-top: -60px;
     background: url('images/bg.jpg');
     background-attachment:fixed;
+    background-size: cover;
+    border-top: 4px solid rgba(0,0,0,.05);
     height: 100px;
 }
 .icon-arrow-right {
